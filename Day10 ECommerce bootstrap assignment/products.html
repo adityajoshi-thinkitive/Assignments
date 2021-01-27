@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: contain;
+        }
+        
+        .card-deck {
+            margin-top: 20px;
+        }
+        
+        li {
+            margin-left: 15px;
+        }
+        
+        a {
+            font-size: larger;
+            font-weight: bolder;
+        }
+        
+        h6 {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div style="background-color: bisque;">  -->
+    <div style="background-color: rgb(194, 238, 143);">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+                    <!-- Brand/logo -->
+                    <a class="navbar-brand" style="margin-left: ;" href="#">
+                        <img src="m.svg" alt="logo" style="width:40px;">
+                    </a>
+                    <h4 style="color: azure; padding-top:5px;">Mentra</h4>
+
+                    <div style="margin-left: 500px;">
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <div class="container mt-4">
+            <h2>Popular Products</h2>
+            <div class="container-fluid mt-4">
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="Smartwatch.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple Smart Watch</h5>
+                            <h6>$ 60.00</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="puma.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Puma Shoes</h5>
+                            <h6>$ 45.00</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="gogle.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> Ray-ban Sunglasses UV-proof</h5>
+                            <h6>$ 99.00</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="hoodie.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Men Hoodie</h5>
+                            <h6>$ 110.00</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="deodrant.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Denver Men Deodorant</h5>
+                            <h6>$ 40.00</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="syska.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> Syska Trimmer</h5>
+                            <h6>$ 69.00</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
