@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.model.Teacher" table="teacher">
+		<id name="teacherId" column="teacherId" type="int">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="teacherName" column="teacherName" type="string"></property>
+		<property name="teacherUsername" column="teacherUsername" type="string"></property>
+		<property name="teacherPassword" column="teacherPassword" type="string"></property>
+		<property name="teacherSecurityQuestion" column="teacherSecurityQuestion" type="string"></property>
+		<property name="teacherSecurityAnswer" column="teacherSecurityAnswer" type="string"></property>
+		<property name="adminApprovalTeacher" column="adminApprovalTeacher" type="boolean"></property>
+		
+	</class>
+	
+	
+
+</hibernate-mapping> 

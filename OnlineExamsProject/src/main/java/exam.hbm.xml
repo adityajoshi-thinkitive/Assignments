@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.model.Exam" table="exam">
+		<id name="examId" column="examId" type="int">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="studentId" column="studentId" type="int"></property>
+		
+		<many-to-one name="questionPaper" class="com.thinkitive.model.QuestionPaper"
+			cascade="all" lazy="false"></many-to-one>
+		
+		<list name="studentAnswers" table="studentAnswers" lazy="false">  
+     		<key column="examId"></key>  
+     		<index column="type"></index>  
+     		<element column="studentAnswer" type="string"></element>  
+   		</list>  
+		
+		<property name="marks" column="marks" type="int"></property>
+	</class>
+	
+	
+
+</hibernate-mapping> 

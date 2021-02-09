@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.model.Question" table="question">
+		<id name="questionId" column="questionId" type="int">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="question" column="question" type="string"></property>
+		
+		<property name="options" column="options" type="string"></property>
+		
+		<property name="answer" column="answer" type="string"></property>
+	</class>
+	
+	
+
+</hibernate-mapping> 

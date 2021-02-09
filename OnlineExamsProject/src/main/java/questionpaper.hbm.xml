@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.model.QuestionPaper" table="questionpaper">
+		<id name="questionPaperId" column="questionPaperId" type="int">
+			<generator class="assigned"></generator>
+		</id>
+	
+   		<set name="questionList" cascade="all" lazy="false">
+			<key column="questionPaperId"></key>
+			<many-to-many class="com.thinkitive.model.Question"></many-to-many>
+		</set>
+   		
+	</class>
+	
+	
+
+</hibernate-mapping> 
